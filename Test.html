@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NFT Series Collection</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f3f3;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .cta-button {
+      background-color: #ff7f50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px 0;
+      background: linear-gradient(to right, #87CEFA, #1E90FF);
+      color: white;
+    }
+    .hero-text {
+      max-width: 50%;
+    }
+    .hero-image img {
+      max-width: 400px;
+      border-radius: 10px;
+    }
+
+    /* Grid Section */
+    .grid-section {
+      padding: 50px 0;
+      background-color: #ffffff;
+    }
+    .nft-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .nft-card {
+      background: #f9f9f9;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    .nft-card:hover {
+      transform: scale(1.05);
+    }
+    .nft-card img {
+      width: 100%;
+      height: auto;
+    }
+    .nft-card h3 {
+      padding: 10px;
+    }
+    .nft-card p {
+      padding: 0 10px 10px;
+    }
+
+    /* Carousel Section */
+    .carousel-section {
+      padding: 50px 0;
+      background-color: #87CEFA;
+      color: white;
+      text-align: center;
+    }
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+    }
+    .carousel img {
+      width: 300px;
+      margin: 0 10px;
+      border-radius: 10px;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero-section container">
+    <div class="hero-text">
+      <h1>Explore the Wonders of Indonesia</h1>
+      <p>Discover a curated selection of NFTs that celebrate Indonesia's natural beauty and heritage.</p>
+      <button class="cta-button">Learn More</button>
+    </div>
+    <div class="hero-image">
+      <img src="featured-nft.jpg" alt="Featured NFT">
+    </div>
+  </section>
+
+  <!-- Grid Section -->
+  <section class="grid-section container">
+    <h2>Our Collection</h2>
+    <div class="nft-grid">
+      <div class="nft-card">
+        <img src="nft1.jpg" alt="NFT 1">
+        <h3>NFT Title 1</h3>
+        <p>Short description of NFT 1</p>
+      </div>
+      <div class="nft-card">
+        <img src="nft2.jpg" alt="NFT 2">
+        <h3>NFT Title 2</h3>
+        <p>Short description of NFT 2</p>
+      </div>
+      <div class="nft-card">
+        <img src="nft3.jpg" alt="NFT 3">
+        <h3>NFT Title 3</h3>
+        <p>Short description of NFT 3</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carousel Section -->
+  <section class="carousel-section container">
+    <h2>Highlighted NFTs</h2>
+    <div class="carousel">
+      <img src="highlight1.jpg" alt="Highlight 1">
+      <img src="highlight2.jpg" alt="Highlight 2">
+      <img src="highlight3.jpg" alt="Highlight 3">
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>&copy; 2024 NFT Series Indonesia</p>
+  </footer>
+
+</body>
+</html>
